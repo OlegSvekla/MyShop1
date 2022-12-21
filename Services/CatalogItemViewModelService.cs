@@ -7,9 +7,9 @@ namespace MyShop1.Services
     {
 
         private readonly IRepository<CatalogItem> _catalogItemRepository;
-        public CatalogItemViewModelService()
+        public CatalogItemViewModelService(IRepository<CatalogItem> catalogItemRepository)
         {
-            _catalogItemRepository = new LocalCatalogItemRepository();
+            _catalogItemRepository = catalogItemRepository;
         }
 
         public void UpdateCatalogItem(CatalogItemViewModel viewModel)
