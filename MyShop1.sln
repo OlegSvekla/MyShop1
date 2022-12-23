@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyShop1", "MyShop1.csproj", "{9C481419-5D10-445C-99FB-086BFA64E437}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyShop1", "src/MyShop/MyShop1.csproj", "{9C481419-5D10-445C-99FB-086BFA64E437}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyShop.ApplicationCore", "..\MyShop.ApplicationCore\MyShop.ApplicationCore.csproj", "{363773DB-ACEC-4209-AE06-04F631BE6A0E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyShop.ApplicationCore", "src\MyShop.ApplicationCore\MyShop.ApplicationCore.csproj", "{363773DB-ACEC-4209-AE06-04F631BE6A0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyShop.Infrastructure", "..\MyShop.Infrastructure\MyShop.Infrastructure.csproj", "{0FC957A6-4F89-44ED-B0AA-48E47980CBF7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyShop.Infrastructure", "src\MyShop.Infrastructure\MyShop.Infrastructure.csproj", "{0FC957A6-4F89-44ED-B0AA-48E47980CBF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
