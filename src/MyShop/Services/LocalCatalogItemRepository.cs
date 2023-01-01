@@ -1,4 +1,5 @@
-﻿using MyShop1.Interfaces;
+﻿using MyShop.ApplicationCore.Entities;
+using MyShop1.Interfaces;
 using MyShop1.Models;
 
 namespace MyShop1.Services
