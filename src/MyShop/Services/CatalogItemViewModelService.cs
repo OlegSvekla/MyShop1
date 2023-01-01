@@ -1,4 +1,5 @@
-﻿using MyShop.ApplicationCore.Interfaces;
+﻿using MyShop.ApplicationCore.Entities;
+using MyShop.ApplicationCore.Interfaces;
 using MyShop1.Interfaces;
 using MyShop1.Models;
 

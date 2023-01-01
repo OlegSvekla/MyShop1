@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis;
+using MyShop.ApplicationCore.Entities;
 using MyShop1.Interfaces;
 using MyShop1.Models;
 using MyShop1.Services;
