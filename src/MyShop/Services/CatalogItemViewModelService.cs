@@ -19,6 +19,21 @@ namespace MyShop1.Services
             _logger = logger;
         }
 
+        public async Task<IEnumerable<CatalogItemViewModel>> GetCatalogItem()
+        {
+            var entities = await _catalogItemRepository.GetAllAsync();
+
+            var catalogItems = entities.Select(item => new CatalogItemViewModel()
+            {
+                Id = item.Id,
+                Name = item.Name,
+                PictureUrl = item.PictureUrl,
+                Price = item.Price,
+            }).ToList();
+
+            return catalogItems;
+        }
+
         public void UpdateCatalogItem(CatalogItemViewModel viewModel)
         {
             var existingCatalogItem = _catalogItemRepository.GetById(viewModel.Id);

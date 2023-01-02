@@ -6,6 +6,9 @@
 
         public string Type { get; set; }
 
-
+        public CatalogType(string type)
+        {
+            type = Type;
+        }
     }
 }

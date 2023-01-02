@@ -12,17 +12,36 @@
 
         public string PictureUrl { get; set; }
 
+        public int CatalogTypeId { get; set; }
+
         public CatalogType? CatalogType { get; set; }
+
+        public int CatalogBrandId { get; set; }
 
         public CatalogBrand CatalogBrand { get; set; }
 
-        public CatalogItem(int id, string name, string description, decimal price, string pictureUrl)
+        public CatalogItem(int catalogTypeId,
+        int catalogBrandId,
+        string description,
+        string name,
+        decimal price,
+        string pictureUri)
+        {
+            CatalogTypeId = catalogTypeId;
+            CatalogBrandId = catalogBrandId;
+            Description = description;
+            Name = name;
+            Price = price;
+            PictureUrl = pictureUri;
+        }
+
+        public CatalogItem(int id, string name, string description, decimal price, string pictureUri)
         {
             Id = id;
             Name = name;
             Description = description;
             Price = price;
-            PictureUrl = pictureUrl;
+            PictureUrl = pictureUri;
 
         }
 
