@@ -25,23 +25,23 @@
         string description,
         string name,
         decimal price,
-        string pictureUri)
+        string pictureUrl)
         {
             CatalogTypeId = catalogTypeId;
             CatalogBrandId = catalogBrandId;
             Description = description;
             Name = name;
             Price = price;
-            PictureUrl = pictureUri;
+            PictureUrl = pictureUrl;
         }
 
-        public CatalogItem(int id, string name, string description, decimal price, string pictureUri)
+        public CatalogItem(int id, string name, string description, decimal price, string pictureUrl)
         {
             Id = id;
             Name = name;
             Description = description;
             Price = price;
-            PictureUrl = pictureUri;
+            PictureUrl = pictureUrl;
 
         }
 

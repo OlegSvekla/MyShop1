@@ -11,7 +11,7 @@ namespace MyShop1.Services
         {
             new(1, "1.NET Bot Black Sweatshirt", ".NET Bot Black Sweatshirt", 19.5M,  "/images/products/1.png"),
             new(2, ".NET Black & White Mug", ".NET Black & White Mug", 8.50M, "/images/products/2.png"),
-            new(3,"Prism White T-Shirt", "Prism White T-Shirt", 12,  "/images/products/3.png"),
+            new(3, "Prism White T-Shirt", "Prism White T-Shirt", 12,  "/images/products/3.png"),
             new(4, ".NET Foundation Sweatshirt", ".NET Foundation Sweatshirt", 12, "/images/products/4.png"),
             new(5, "Roslyn Red Sheet", "Roslyn Red Sheet", 8.5M, "/images/products/5.png"),
             new(6, ".NET Blue Sweatshirt", ".NET Blue Sweatshirt", 12, "/images/products/6.png"),

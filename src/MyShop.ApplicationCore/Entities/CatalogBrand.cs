@@ -9,7 +9,7 @@
 
         public CatalogBrand(string brand)
         {
-            brand = Brand;
+            Brand = brand;
         }
 
     }

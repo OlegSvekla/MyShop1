@@ -8,7 +8,7 @@
 
         public CatalogType(string type)
         {
-            type = Type;
+            Type = type;
         }
     }
 }
