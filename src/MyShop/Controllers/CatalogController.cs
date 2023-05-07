@@ -22,12 +22,12 @@ namespace MyShop1.Controllers
             _catalogRepository = catalogRepository;
         }
 
-        public async Task <IActionResult> Index()
+        public async Task <IActionResult> Index(int? brandFilterAppled, int? typesFilterAppled)
         {
 
-            var catalogItemsViewModel = await _catalogItemViewModelService.GetCatalogItem();
+            var viewModel = await _catalogItemViewModelService.GetCatalogItems(brandFilterAppled, typesFilterAppled);
  
-            return View(catalogItemsViewModel);
+            return View(viewModel);
         }
 
         public IActionResult Details(int id)
