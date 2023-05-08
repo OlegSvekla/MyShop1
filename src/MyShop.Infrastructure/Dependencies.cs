@@ -2,11 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MyShop.Infrastructure.Data;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using MyShop.Infrastructure.Identity;
 
 namespace MyShop.Infrastructure
 {
@@ -15,7 +11,7 @@ namespace MyShop.Infrastructure
         public static void ConfigureServices(IConfiguration configuration, IServiceCollection services) 
         {
             services.AddDbContext<CatalogContext>(context => context.UseSqlServer(configuration.GetConnectionString("CatalogConnection")));
-
+            services.AddDbContext<AppIdentityDbContext>(context => context.UseSqlServer(configuration.GetConnectionString("IdentityConnection")));
         }
     }
 }
