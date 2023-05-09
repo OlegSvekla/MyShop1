@@ -3,20 +3,8 @@
 @{
     ViewData["Title"] = "Catalog";
 }
+<section>@Html.CreateList(new string[]{"France", "Italy", "Spain"})</section>
 
-@*<section>
-    <div>
-        <form method="get">
-            <label data-tittle ="brand">
-                <select asp-for="@Model.BrandFilterAppled" asp-items="@Model.Brands"></select>
-            </label>
-            <label data-tittle="type">
-                <select asp-for="@Model.TypesFilterAppled" asp-items="@Model.Types"></select>
-            </label>
-            <input type="submit" value="App Filters"/> 
-        </form>
-    </div>
-</section>*@
 
 <section class="esh-catalog-filters">
     <div class="container">
