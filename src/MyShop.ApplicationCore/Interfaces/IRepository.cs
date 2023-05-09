@@ -10,6 +10,8 @@
 
         Task<List<T>> GetAllAsync();
 
+        Task<T> AddSync(T entity);
+
     }
     
     
