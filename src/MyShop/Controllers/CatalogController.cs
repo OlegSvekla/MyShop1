@@ -10,8 +10,6 @@ namespace MyShop1.Controllers
 {
     public class CatalogController : Controller
     {
-
-
         private readonly ICatalogItemViewModelService _catalogItemViewModelService;
         private readonly IRepository<CatalogItem> _catalogRepository;
         private readonly IBasketService _basketService;
@@ -25,7 +23,6 @@ namespace MyShop1.Controllers
             _basketService = basketService;
         }
 
-
         [HttpGet]
         public async Task <IActionResult> Index(int? brandFilterAppled, int? typesFilterAppled)
         {
@@ -37,10 +34,10 @@ namespace MyShop1.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Index(int id) 
+        public async Task<IActionResult> Index(int id, decimal price) 
         {
             var userName = GetOrSetBasketCookieAndUserName();
-            var basket = await _basketService.AddItem2Basket(userName);
+            var basket = await _basketService.AddItem2Basket(userName, id, price);
             
             return RedirectToAction("Index");
         }
