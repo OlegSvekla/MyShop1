@@ -9,6 +9,8 @@ namespace MyShop1.Interfaces
 
         Task<CatalogIndexViewModel> GetCatalogItems(int? brandId, int? typrId);
 
+        Task<CatalogIndexViewModel> GetCatalogItems(int pageIndex, int itemsPage ,int? brandId, int? typrId);
+
         Task<IEnumerable<SelectListItem>> GetBrands();
 
         Task<IEnumerable<SelectListItem>> GetTypes();

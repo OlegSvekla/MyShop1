@@ -54,6 +54,12 @@ namespace MyShop1.Services
 
             return vm;
         }
+
+        public async Task<CatalogIndexViewModel> GetCatalogItems(int pageIndex, int itemsPage, int? brandId, int? typrId)
+        {
+            return await GetCatalogItems(brandId, typrId);
+        }
+
         public async Task<IEnumerable<SelectListItem>> GetBrands()
         {
             _logger.LogInformation("Get Brands called");
@@ -108,5 +114,7 @@ namespace MyShop1.Services
                 $"Price {existingCatalogItem.Price}");
             _catalogItemRepository.Update(existingCatalogItem);
         }
+
+       
     }
 }
